@@ -151,6 +151,50 @@ const person = {
   location: ["Planet", "Earth"],
   isProgrammer: true,
   obj: {},
+  10: 'ten'
 };
 
 // console.log(typeof person);
+
+//
+//--------------------
+// Accessing properties
+//--------------------
+// dot notation
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+// console.log(person.location);
+// console.log(person.isProgrammer);
+// console.log(person.obj);
+//--------------------
+
+//
+//--------------------
+// bracket notation
+console.log(person['firstName']);
+console.log(person['location']);
+//--------------------
+
+//
+//--------------------
+// when to use bracket or dot notation
+//--------------------
+// console.log(person.10); // error!
+// console.log(person[10]);
+
+//
+//--------------------
+// add a property to the object
+//--------------------
+person.newProp = "This is a new property, added"
+console.log(person.newProp);
+
+//
+//--------------------
+// remove a property from an object
+//--------------------
+delete person[10]
+console.log(person);
+
+// challengeTwo given
