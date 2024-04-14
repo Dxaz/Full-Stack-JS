@@ -10,3 +10,17 @@
 // less error-prone.
 //-----------------------------
 // for (variable of iterable) {...}
+let peoples = ["greg", 'alex', 'john', 'brad']
+
+for (let people of peoples) {
+    console.log(people);
+}
+
+const text = "Greg"
+
+for (const char of text) {
+    console.log(char);
+    
+}
+//-----------------------------
+// challange given
